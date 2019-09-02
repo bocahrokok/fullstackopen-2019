@@ -8,7 +8,7 @@ const App = ({ notes }) => {
       note={note}
     />
   )
-
+/////mantap
   return (
     <div>
       <h1>Notes</h1>
