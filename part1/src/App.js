@@ -1,40 +1,42 @@
 import React, { useState } from 'react'
 import Note from './Components/Note'
+import axios from 'axios'
 
 const App = (props) => {
-  const [notes, setNotes] = useState(props.notes) 
-  const [newNote, setNewNote] = useState('')
-  const [showAll, setShowAll] = useState(true)
+    const [notes, setNotes] = useState([])
+    const [newNote, setNewNote] = useState('')
+    const [showAll, setShowAll] = useState(true)
 
-
-  const notesToShow = showAll
-    ? notes
-    : notes.filter(note=> note.important === true)
-
-  const rows = () => notesToShow.map(note =>
-    <Note
-      key={note.id}
-      note={note}
-    />
-  )
-  
-
-  const addNote = (event) => {
-    event.preventDefault()
-    const noteObject = {
-      content: newNote,
-      date: new Date().toISOString(),
-      important: Math.random() > 0.5,
-      id: notes.length + 1,
+    const hook = () => {
+      console.log('effect')
+      axios
+        .get('http://localhost:3001/notes')
+        .then(response => {
+          console.log('promise fulfilled')
+          setNotes(response.data)
+        })
     }
-  
-    setNotes(notes.concat(noteObject))
-    setNewNote('')
-  }
+    
+    useEffect(hook, [])
 
-  const handleNoteChange = (event) => {
-    console.log(event.target.value)
-    setNewNote(event.target.value)
+    console.log('render', notes.length, 'notes');
+
+    addNote = event => {
+      event.preventDefault()
+      const noteObject = {
+        content: newNote,
+        date: new Date(),
+        important: Math.random() > 0.5,
+      }
+    
+      axios
+        .post('http://localhost:3001/notes', noteObject)
+        .then(response => {
+          setNotes(notes.concat(response.data))
+          setNewNote('')
+        })
+    }
+
   }
 
   return (
@@ -57,6 +59,6 @@ const App = (props) => {
       </form>      
     </div>
   )
-}
+
 
 export default App
