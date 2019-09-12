@@ -1,4 +1,5 @@
-const http = require('http')
+const express = require('express')
+const app = express()
 
 
 
@@ -23,10 +24,32 @@ let notes = [
       }
 ]
 
-const app = http.createServer((req, res)=> {
-    res.writeHead(200, {'Content-Type': 'text/plain'})
-    res.end(JSON.stringify(notes))
+
+app.get('/', (req,res) => {
+    res.send('<h1> Henlo woldm </h1>')
 })
+
+app.get('/notes', (req,res) => {
+    res.json(notes)
+})
+
+app.get('/notes/:id', (request, response) => {
+    const id = Number(request.params.id)
+    const note = notes.find(note => {
+        console.log(note.id, typeof note.id, id, typeof id, note.id === id)
+        return note.id === id;
+    })
+    console.log(note);
+    response.json(note)
+
+    if (note) {
+        response.json(note)
+      } else {
+        response.status(404).end()
+      }
+    
+  })
+
 
 const port = 3001
 app.listen(port)
