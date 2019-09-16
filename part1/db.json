@@ -4,7 +4,7 @@
       "id": 1,
       "content": "HTML is easy",
       "date": "2019-05-30T17:30:31.098Z",
-      "important": true
+      "important": false
     },
     {
       "id": 2,
@@ -21,7 +21,7 @@
     {
       "content": "matnap jaya",
       "date": "2019-09-16T10:18:03.866Z",
-      "important": false,
+      "important": true,
       "id": 4
     },
     {
@@ -33,7 +33,7 @@
     {
       "content": "ini keren sih",
       "date": "2019-09-16T10:18:08.443Z",
-      "important": false,
+      "important": true,
       "id": 6
     },
     {
@@ -93,7 +93,7 @@
     {
       "content": "as",
       "date": "2019-09-16T12:19:06.740Z",
-      "important": true,
+      "important": false,
       "id": 16
     },
     {
@@ -101,6 +101,36 @@
       "date": "2019-09-16T12:30:06.122Z",
       "important": false,
       "id": 17
+    },
+    {
+      "content": "teguh si teguh huget huget ",
+      "date": "2019-09-16T14:52:25.878Z",
+      "important": false,
+      "id": 18
+    },
+    {
+      "content": "huget",
+      "date": "2019-09-16T14:52:29.076Z",
+      "important": false,
+      "id": 19
+    },
+    {
+      "content": "warna indie ",
+      "date": "2019-09-16T14:52:35.188Z",
+      "important": false,
+      "id": 20
+    },
+    {
+      "content": "gerakan prontaxan",
+      "date": "2019-09-16T14:52:38.497Z",
+      "important": false,
+      "id": 21
+    },
+    {
+      "content": "",
+      "date": "2019-09-16T14:52:41.787Z",
+      "important": false,
+      "id": 22
     }
   ]
 }
