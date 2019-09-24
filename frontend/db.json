@@ -21,25 +21,25 @@
     {
       "content": "matnap jaya",
       "date": "2019-09-16T10:18:03.866Z",
-      "important": true,
+      "important": false,
       "id": 4
     },
     {
       "content": "wkwkwkw",
       "date": "2019-09-16T10:18:05.379Z",
-      "important": true,
+      "important": false,
       "id": 5
     },
     {
       "content": "ini keren sih",
       "date": "2019-09-16T10:18:08.443Z",
-      "important": true,
+      "important": false,
       "id": 6
     },
     {
       "content": "anijng mantap jaua",
       "date": "2019-09-16T10:18:12.502Z",
-      "important": true,
+      "important": false,
       "id": 7
     },
     {
@@ -51,13 +51,13 @@
     {
       "content": "anjing krik",
       "date": "2019-09-16T10:18:20.620Z",
-      "important": true,
+      "important": false,
       "id": 9
     },
     {
       "content": "teguhsiasu",
       "date": "2019-09-16T10:18:25.614Z",
-      "important": true,
+      "important": false,
       "id": 10
     },
     {
@@ -69,13 +69,13 @@
     {
       "content": "teguhsianjig",
       "date": "2019-09-16T10:24:41.816Z",
-      "important": true,
+      "important": false,
       "id": 12
     },
     {
       "content": "",
       "date": "2019-09-16T10:24:44.145Z",
-      "important": true,
+      "important": false,
       "id": 13
     },
     {
@@ -137,6 +137,18 @@
       "date": "2019-09-18T08:35:16.393Z",
       "important": true,
       "id": 23
+    },
+    {
+      "content": "tengoku",
+      "date": "2019-09-24T14:48:29.650Z",
+      "important": false,
+      "id": 25
+    },
+    {
+      "content": "ayam goreng garing; garing didalam",
+      "date": "2019-09-24T14:56:24.949Z",
+      "important": true,
+      "id": 26
     }
   ]
 }
