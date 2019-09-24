@@ -1,10 +1,10 @@
 # fullstackopen-2019
 full-stack-open by helsinsky
 
-#Readme:
+# Readme:
 Yang ini not fail di part 2: 
 
-#instruction:
+# instruction:
 
 npm start
 npm run server 
